@@ -1,11 +1,19 @@
 import React from 'react'
 
 const App = () => {
+  const submitHandler = (e) => {
+    e.preventDefault()
+    console.log("Form submitted")
+  }
   return (
     <div>
-      <form>
-        <input type="text" placeholder='Enter your name' />
-        <button>Submit</button>
+      <form
+      onSubmit={(e)=>{
+        submitHandler(e)
+      }}
+      >
+        <input className='px-4 py-3 text-xl' type="text" placeholder='Enter your name' />
+        <button className='px-4 py-3 text-xl font-semibold bg-emerald-600 rounded'>Submit</button>
       </form>
     </div>
   )
