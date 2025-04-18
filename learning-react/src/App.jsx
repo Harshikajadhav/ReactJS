@@ -12,7 +12,11 @@ const App = () => {
         submitHandler(e)
       }}
       >
-        <input className='px-4 py-3 text-xl' type="text" placeholder='Enter your name' />
+        <input
+        onChange={(e)=> {
+          console.log(e.target.value)
+        }}
+        className='px-4 py-3 text-xl' type="text" placeholder='Enter your name' />
         <button className='px-4 py-3 text-xl font-semibold bg-emerald-600 rounded'>Submit</button>
       </form>
     </div>
