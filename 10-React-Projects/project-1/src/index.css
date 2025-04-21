@@ -1,0 +1,52 @@
+@import "tailwindcss";
+.container{
+  margin: 0 auto;
+  max-width: 80%;
+}
+.hero {
+display: flex;
+align-items: center;
+height: calc(100vh - 72px); 
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hero h1{
+  font-weight: 800;
+  line-height: 82px;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.hero p{
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.hero-btn{
+  display: flex; 
+  gap: 40px;
+}
+.secondary-btn{
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+.shopping p{
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.hero-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image img{
+  width: 1800px;
+  height: 550px;
+}
+.brand-icons{
+  display: flex;
+  gap: 16px;
+}
